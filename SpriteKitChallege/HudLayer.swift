@@ -10,5 +10,14 @@ import UIKit
 import SpriteKit
 
 class HudLayer: SKNode {
+    
+    init(size : CGSize) {
+        super.init()
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
 }
