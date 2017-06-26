@@ -23,6 +23,9 @@ class GameScene: SKScene {
         self.addChild(gameLayer!)
         self.addChild(backgroundLayer!)
         self.addChild(hudLayer!)
+        self.physicsWorld.contactDelegate = self
+        self.physicsWorld.gravity = CGVector(dx: 0, dy: -3)
+        self.physicsBody = SKPhysicsBody(edgeLoopFrom: view.bounds)
         
     }
     
@@ -32,7 +35,22 @@ class GameScene: SKScene {
         backgroundLayer = BackgroundLayer(size: size)
         hudLayer = HudLayer(size: size)
         super.init(size : size)
+        self.isUserInteractionEnabled = true
+        
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.gameLayer?.touchesEnded(touches, with: event)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

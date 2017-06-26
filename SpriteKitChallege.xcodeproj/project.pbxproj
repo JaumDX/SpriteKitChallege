@@ -42,6 +42,7 @@
 		756FB72C1F0091AD00D8FBC0 /* GameObjectDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB72B1F0091AD00D8FBC0 /* GameObjectDelegate.swift */; };
 		756FB72F1F00925600D8FBC0 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB72E1F00925600D8FBC0 /* Dog.swift */; };
 		756FB7321F0095B600D8FBC0 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB7311F0095B600D8FBC0 /* Background.swift */; };
+		756FB7351F00B4CA00D8FBC0 /* GameScene+SKPhysicsBodyDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB7341F00B4CA00D8FBC0 /* GameScene+SKPhysicsBodyDelegateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		756FB72B1F0091AD00D8FBC0 /* GameObjectDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObjectDelegate.swift; sourceTree = "<group>"; };
 		756FB72E1F00925600D8FBC0 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		756FB7311F0095B600D8FBC0 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		756FB7341F00B4CA00D8FBC0 /* GameScene+SKPhysicsBodyDelegateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+SKPhysicsBodyDelegateExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		756FB6D21F00877700D8FBC0 /* SpriteKitChallege */ = {
 			isa = PBXGroup;
 			children = (
+				756FB7331F00B4A800D8FBC0 /* Extensions */,
 				756FB7291F00919100D8FBC0 /* Delegates */,
 				756FB7201F008DB400D8FBC0 /* Game Objects */,
 				756FB71F1F008AA200D8FBC0 /* Layers */,
@@ -258,6 +261,14 @@
 			name = BackGround;
 			sourceTree = "<group>";
 		};
+		756FB7331F00B4A800D8FBC0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				756FB7341F00B4CA00D8FBC0 /* GameScene+SKPhysicsBodyDelegateExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -362,6 +373,7 @@
 				756FB6DC1F00877700D8FBC0 /* GameViewController.swift in Sources */,
 				756FB6D41F00877700D8FBC0 /* AppDelegate.swift in Sources */,
 				756FB72C1F0091AD00D8FBC0 /* GameObjectDelegate.swift in Sources */,
+				756FB7351F00B4CA00D8FBC0 /* GameScene+SKPhysicsBodyDelegateExtension.swift in Sources */,
 				756FB7321F0095B600D8FBC0 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

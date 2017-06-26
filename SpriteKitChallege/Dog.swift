@@ -26,17 +26,52 @@ class Dog: SKSpriteNode, GameObject {
         
         super.init(texture: texture, color: .clear, size: texture.size())
         self.position = position
+        self.zPosition = 0
         self.setScale(4.0)
+        self.physicsBody?.affectedByGravity = true
+        self.physicsBody = setupPhysicsBody(objectSize: self.size)
 
         
     }
+    
+    
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    
+    
     func setupPhysicsBody(objectSize: CGSize) -> SKPhysicsBody {
-        return SKPhysicsBody()
+        
+        let physicsBody = SKPhysicsBody(texture: self.texture!, size: size)
+        physicsBody.affectedByGravity = true
+        physicsBody.isDynamic = true
+        
+        
+        return physicsBody
+    }
+    
+    
+    
+    func peformMovement(position : CGPoint){
+        
+        SKAction.moveTo(x: position.x, duration: 1.3)
+        
+        let move = SKAction.moveTo(x: position.x, duration: 1.3)
+        
+        let sequence = SKAction.sequence([move])
+        
+        run(sequence, completion: {
+            
+            self.removeAllActions()
+            
+            
+        })
+    
+        
     }
     
     
