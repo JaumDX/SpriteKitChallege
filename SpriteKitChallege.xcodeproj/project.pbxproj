@@ -41,6 +41,7 @@
 		756FB7281F008E2600D8FBC0 /* HudLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB7271F008E2600D8FBC0 /* HudLayer.swift */; };
 		756FB72C1F0091AD00D8FBC0 /* GameObjectDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB72B1F0091AD00D8FBC0 /* GameObjectDelegate.swift */; };
 		756FB72F1F00925600D8FBC0 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB72E1F00925600D8FBC0 /* Dog.swift */; };
+		756FB7321F0095B600D8FBC0 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB7311F0095B600D8FBC0 /* Background.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		756FB7271F008E2600D8FBC0 /* HudLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudLayer.swift; sourceTree = "<group>"; };
 		756FB72B1F0091AD00D8FBC0 /* GameObjectDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObjectDelegate.swift; sourceTree = "<group>"; };
 		756FB72E1F00925600D8FBC0 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		756FB7311F0095B600D8FBC0 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,6 @@
 		756FB6D21F00877700D8FBC0 /* SpriteKitChallege */ = {
 			isa = PBXGroup;
 			children = (
-				756FB72D1F00923900D8FBC0 /* Characters */,
 				756FB7291F00919100D8FBC0 /* Delegates */,
 				756FB7201F008DB400D8FBC0 /* Game Objects */,
 				756FB71F1F008AA200D8FBC0 /* Layers */,
@@ -226,6 +227,8 @@
 		756FB7201F008DB400D8FBC0 /* Game Objects */ = {
 			isa = PBXGroup;
 			children = (
+				756FB7301F00959500D8FBC0 /* BackGround */,
+				756FB72D1F00923900D8FBC0 /* Characters */,
 				756FB7211F008DD800D8FBC0 /* GameObject.swift */,
 			);
 			name = "Game Objects";
@@ -245,6 +248,14 @@
 				756FB72E1F00925600D8FBC0 /* Dog.swift */,
 			);
 			name = Characters;
+			sourceTree = "<group>";
+		};
+		756FB7301F00959500D8FBC0 /* BackGround */ = {
+			isa = PBXGroup;
+			children = (
+				756FB7311F0095B600D8FBC0 /* Background.swift */,
+			);
+			name = BackGround;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +362,7 @@
 				756FB6DC1F00877700D8FBC0 /* GameViewController.swift in Sources */,
 				756FB6D41F00877700D8FBC0 /* AppDelegate.swift in Sources */,
 				756FB72C1F0091AD00D8FBC0 /* GameObjectDelegate.swift in Sources */,
+				756FB7321F0095B600D8FBC0 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

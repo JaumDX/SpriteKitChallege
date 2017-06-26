@@ -20,13 +20,14 @@ class Dog: SKSpriteNode, GameObject {
         let texture = SKTexture(imageNamed: "Wolf1")
         characterState = .idle
         texture.filteringMode = .nearest
+        
         inverted = false
         onGround = false
         
         super.init(texture: texture, color: .clear, size: texture.size())
         self.position = position
-        
-        
+        self.setScale(4.0)
+
         
     }
     
