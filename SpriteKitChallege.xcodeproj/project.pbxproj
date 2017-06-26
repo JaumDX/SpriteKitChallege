@@ -35,6 +35,10 @@
 		756FB71C1F008A4600D8FBC0 /* Jelly8.png in Resources */ = {isa = PBXBuildFile; fileRef = 756FB7121F008A4600D8FBC0 /* Jelly8.png */; };
 		756FB71D1F008A4600D8FBC0 /* Jelly9.png in Resources */ = {isa = PBXBuildFile; fileRef = 756FB7131F008A4600D8FBC0 /* Jelly9.png */; };
 		756FB71E1F008A4600D8FBC0 /* Jelly10.png in Resources */ = {isa = PBXBuildFile; fileRef = 756FB7141F008A4600D8FBC0 /* Jelly10.png */; };
+		756FB7221F008DD800D8FBC0 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB7211F008DD800D8FBC0 /* GameObject.swift */; };
+		756FB7241F008E0E00D8FBC0 /* GameLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB7231F008E0E00D8FBC0 /* GameLayer.swift */; };
+		756FB7261F008E1A00D8FBC0 /* BackgroundLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB7251F008E1A00D8FBC0 /* BackgroundLayer.swift */; };
+		756FB7281F008E2600D8FBC0 /* HudLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FB7271F008E2600D8FBC0 /* HudLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +72,10 @@
 		756FB7121F008A4600D8FBC0 /* Jelly8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jelly8.png; sourceTree = "<group>"; };
 		756FB7131F008A4600D8FBC0 /* Jelly9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jelly9.png; sourceTree = "<group>"; };
 		756FB7141F008A4600D8FBC0 /* Jelly10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jelly10.png; sourceTree = "<group>"; };
+		756FB7211F008DD800D8FBC0 /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		756FB7231F008E0E00D8FBC0 /* GameLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLayer.swift; sourceTree = "<group>"; };
+		756FB7251F008E1A00D8FBC0 /* BackgroundLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundLayer.swift; sourceTree = "<group>"; };
+		756FB7271F008E2600D8FBC0 /* HudLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 		756FB6D21F00877700D8FBC0 /* SpriteKitChallege */ = {
 			isa = PBXGroup;
 			children = (
+				756FB7201F008DB400D8FBC0 /* Game Objects */,
 				756FB71F1F008AA200D8FBC0 /* Layers */,
 				756FB6F01F0089AB00D8FBC0 /* Storyboard */,
 				756FB6ED1F00899700D8FBC0 /* Sprites */,
@@ -201,8 +210,19 @@
 		756FB71F1F008AA200D8FBC0 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				756FB7231F008E0E00D8FBC0 /* GameLayer.swift */,
+				756FB7251F008E1A00D8FBC0 /* BackgroundLayer.swift */,
+				756FB7271F008E2600D8FBC0 /* HudLayer.swift */,
 			);
 			name = Layers;
+			sourceTree = "<group>";
+		};
+		756FB7201F008DB400D8FBC0 /* Game Objects */ = {
+			isa = PBXGroup;
+			children = (
+				756FB7211F008DD800D8FBC0 /* GameObject.swift */,
+			);
+			name = "Game Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756FB7221F008DD800D8FBC0 /* GameObject.swift in Sources */,
+				756FB7261F008E1A00D8FBC0 /* BackgroundLayer.swift in Sources */,
+				756FB7281F008E2600D8FBC0 /* HudLayer.swift in Sources */,
+				756FB7241F008E0E00D8FBC0 /* GameLayer.swift in Sources */,
 				756FB6DA1F00877700D8FBC0 /* GameScene.swift in Sources */,
 				756FB6DC1F00877700D8FBC0 /* GameViewController.swift in Sources */,
 				756FB6D41F00877700D8FBC0 /* AppDelegate.swift in Sources */,
