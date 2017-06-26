@@ -19,6 +19,7 @@ class Dog: SKSpriteNode, GameObject {
         
         let texture = SKTexture(imageNamed: "Wolf1")
         characterState = .idle
+        texture.filteringMode = .nearest
         inverted = false
         onGround = false
         
@@ -34,7 +35,7 @@ class Dog: SKSpriteNode, GameObject {
     }
     
     func setupPhysicsBody(objectSize: CGSize) -> SKPhysicsBody {
-        return SKPhysicsBody
+        return SKPhysicsBody()
     }
     
     
