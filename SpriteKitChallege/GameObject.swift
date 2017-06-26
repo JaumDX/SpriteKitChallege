@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 
 enum CharacterState : String {
@@ -23,6 +24,6 @@ protocol GameObject {
     var onGround : Bool {get set}
     var characterState : CharacterState {get set}
     
-    func setupPhysicsBody(objectSize : CGSize)
+    func setupPhysicsBody(objectSize : CGSize) -> SKPhysicsBody
     
 }
